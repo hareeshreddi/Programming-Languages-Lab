@@ -1,0 +1,29 @@
+Question 04
+
+Pseudo Code
+
+Input : maximum_area number_of_beds number_of_halls
+
+Output : Dimensions of each of the rooms which form a maximum area that is less than or equal to the maximum area possible
+
+Algo : 
+1. create a list of tuples of all possible configurations for the rooms
+2. create a list and store them and their area possible by this configuration and if this area is less than the maximum area possible then the other rooms dimentions are also calculated
+3. find the tuple with maximum area and return its configuration
+
+How many functions you used?
+3 functions are implemented 
+
+Area all those pure?
+design and combination are impure 
+
+If not? why ?
+because they have IO in them they are impure and other functions are pure.
+
+Do you think the lazy evaluation feature of Haskell can be exploited for better performance in the solutions to the assignments? If so, which solution(s) and how? 
+
+Yes, the lazy evaluation feature of Haskell can be exploited to improve the running time of programs. For example, the function head (list) finds the first element of a list without having to know the entire list. However, this behavior is not observed in imperative languages since to calculate the first element of any list (or array), a function needs to store and know the value of the entire list (or array). We used the head function in q1 and q4.
+
+We can solve the problems using any imperative language as well. Do you find any advantage of using Haskell for these problems (w.r.t the property of lack of side effect)? If your answer is no, elaborate on why not? 
+
+Yes, it is advantageous to use Haskell for many of the problems. This is because not having side effect implies that a function will have the same output every time it is called. This makes it easier to check the validity of a function. Once we have a set of basic functions, we can use them to create bigger and more complex functions, which would be easier to debug since we know the behavior of each of its basic units.

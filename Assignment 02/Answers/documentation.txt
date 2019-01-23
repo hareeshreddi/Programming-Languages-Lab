@@ -1,0 +1,26 @@
+Question1:: 
+			call issubset(string1,string2) to determine the output which is printed in the Console
+			example:: ?- issubset('hati','guwahati'). will return true.
+
+			call l_increasing_s(in,out) where Inlist denotes input list and Outlist denotes output list and output is printed on the console
+			example::  ?- l_increasing_s([1,2,4,3,4],X). will return X=[1,2,3,4].
+Question 2 : 
+queries:: 
+		onrocks(X,Y) returns all the pair X,Y whose marriage is on rocks
+
+		jealous(X) returns all the people who are jealous.
+
+Question3:: 
+			call read_from_file('sample_input.txt') from console to get output into 'encoded_output.txt'
+Question 4 :
+		Sample Queries and Results
+		?- nterm('Lucas', 6, X).
+		X = 18.
+		?- intNumSequence('Lucas', 5, L).
+		L = [2,1,3,4,7,11]
+		?- nterm ('Fibonacci', 4, X).
+		X = 3.
+		?- nterm ('Tribonacci', 10, X)..
+		X = 149.
+		?- nterm ('Tribonacci', X, 81)..
+		X = 9.
